@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111113">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:textAlignment="textEnd"
+        android:touchscreenBlocksFocus="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="277dp"
+            android:layout_weight="@dimen/material_emphasis_disabled"
+            android:height="@android:dimen/app_icon_size"
+            android:gravity="center"
+            android:insetRight="@dimen/cardview_compat_inset_shadow"
+            android:text="@string/movies"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:visibility="visible"
+            app:iconPadding="@dimen/cardview_compat_inset_shadow"
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@dimen/material_emphasis_disabled"
+            app:cardBackgroundColor="#131212">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="202dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/appbar_scrolling_view_behavior"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textAllCaps="true"
+                android:textColor="#BAB5B5"
+                android:textColorHint="#757575"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                tools:text="Bienvenido" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="411dp" />
+
+    <TextView
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="409dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="#2A292C"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:minHeight="48dp"
+        android:text="@string/hola"
+        android:textColor="#CCB4B4"
+        android:textColorHint="#00BCD4"
+        android:textSize="34sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
